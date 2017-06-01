@@ -2,10 +2,16 @@
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:commons="sap.ui.commons" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
 	xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m">
 	<OverflowToolbar>
-		<Button icon="sap-icon://paper-plane" text="Send" type="Accept">
+		<Button icon="sap-icon://accept" text="Approve" type="Accept">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
-		<Button icon="sap-icon://sys-cancel" text="Cancel" type="Reject">
+		<Button icon="sap-icon://undo" text="Send Back" type="Default">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://collaborate" text="Take Opinion" type="Emphasized">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://sys-cancel" text="Reject" type="Reject">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
 	</OverflowToolbar>
@@ -314,7 +320,7 @@
 				<List headerText="A List" showSeparators="Inner"></List>
 			</IconTabFilter>
 			<IconTabFilter text="MESSAGES">
-				<Button icon="sap-icon://add" text="Add Message"/>
+				<Button icon="sap-icon://add" press="onAddMessageDialogPress" text="Add Message" id="idClickPay"/>
 				<Table id="idPaymentMessage" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
 					<columns>
 						<Column width="12em">
@@ -345,10 +351,16 @@
 		</items>
 	</IconTabBar>
 	<OverflowToolbar>
-		<Button icon="sap-icon://paper-plane" text="Send" type="Accept">
+		<Button icon="sap-icon://accept" text="Approve" type="Accept">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
-		<Button icon="sap-icon://sys-cancel" text="Cancel" type="Reject">
+		<Button icon="sap-icon://undo" text="Send Back" type="Default">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://collaborate" text="Take Opinion" type="Emphasized">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://sys-cancel" text="Reject" type="Reject">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
 	</OverflowToolbar>

@@ -2,10 +2,16 @@
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:commons="sap.ui.commons" class="sapUiSizeCompact"
 	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m">
 	<OverflowToolbar>
-		<Button icon="sap-icon://paper-plane" text="Send" type="Accept">
+		<Button icon="sap-icon://accept" text="Approve" type="Accept">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
-		<Button icon="sap-icon://sys-cancel" text="Cancel" type="Reject">
+		<Button icon="sap-icon://undo" text="Send Back" type="Default">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://collaborate" text="Take Opinion" type="Emphasized">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://sys-cancel" text="Reject" type="Reject">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
 	</OverflowToolbar>
@@ -37,21 +43,21 @@
 										<f:content>
 											<core:Title/>
 											<Label text="Request Owner:"/>
-											<Input class="inputForm" value="{RequestOwner}"/>
+											<Input class="inputForm" value="ADEM YETIM" editable="false"/>
 											<Label text="Department:"/>
-											<Input class="inputForm" value="{Department}"/>
+											<Input class="inputForm" value="SOUTHERN ANATOLIA" editable="false"/>
 											<Label text="Title:"/>
-											<Input class="inputForm" value="{Title} "/>
+											<Input class="inputForm" value="SPECIALIST" editable="false"/>
 											<core:Title/>
 											<Label text="Request Number:"/>
-											<Input class="inputForm" value="{Request Number}"/>
+											<Input class="inputForm" value="2017-BAF-4" editable="false"/>
 											<Label text="Request Date:"/>
-											<Input class="inputForm" value="{RequestDate}"/>
+											<Input class="inputForm" value="31.5.2017" editable="false"/>
 											<HBox>
-												<Input class="inputForm" value=""/>
+												<Input class="inputForm" value="14.38" editable="false"/>
 											</HBox>
 											<Label text="Status:"/>
-											<Input class="inputForm" value="{Status}"/>
+											<Input class="inputForm" value="{Status}" editable="false"/>
 										</f:content>
 									</f:SimpleForm>
 								</VBox>
@@ -69,50 +75,55 @@
 										<f:content>
 											<core:Title/>
 											<Label text="Period Start/End:"/>
-											<DatePicker class="inputForm" id="DP1" value="{PeriodDate}"/>
-											<DatePicker class="inputForm" id="DP2" value="{PeriodDate}"/>
+											<DatePicker class="inputForm" id="DP1" value="1.5.2017" editable="false"/>
+											<DatePicker class="inputForm" id="DP2" value="17.5.2017" editable="false"/>
 											<Label text="Supplier:"/>
-											<Input class="inputForm" value="{Supplier}"/>
+											<Input class="inputForm" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" editable="false"/>
 											<Label text="Subject:"/>
-											<TextArea class="inputTextArea" value=""/>
+											<TextArea class="inputTextArea"
+												value="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." editable="false"/>
 											<Label text="Budget Allocation:"/>
-											<Select class="budgetAllo" width="100%">
+											<Select class="budgetAllo" width="100%" enabled="false">
 												<items>
-													<core:Item text=""/>
+													<core:Item
+														text="On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment"
+														editable="false"/>
 												</items>
 											</Select>
 											<Label text="Department:"/>
-											<Input class="inputForm" value="{Department}"/>
+											<Input class="inputForm" value="Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo " editable="false"/>
 											<Label text="Type:"/>
-											<Input class="inputForm" value="{Type} "/>
+											<Input class="inputForm" value="um soluta nobis" editable="false"/>
 											<Label text="Description:"/>
-											<Input class="inputForm" value="{Description}"/>
+											<Input class="inputForm"
+												value=" Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella"
+												editable="false"/>
 											<Label text="Sub.Description:"/>
-											<Input class="inputForm" value="{SubDescription}"/>
-											<Label text="Rem. Budget Amount:"/>
-											<Input class="inputForm" value="{RemBudAmount}"/>
+											<Input class="inputForm" value="Ut enim ad minima veniam, quis nostrum " editable="false"/>
+											<Label text="Rem.Budget Amount:"/>
+											<Input class="inputForm" value="100" editable="false"/>
 											<Label text="Purpose:"/>
-											<TextArea class="inputTextArea" value=""/>
+											<TextArea class="inputTextArea" value="" editable="false"/>
 											<Label text="Explanation:"/>
-											<TextArea class="inputTextArea" value=""/>
+											<TextArea class="inputTextArea" value="" editable="false"/>
 											<Label text=""/>
 											<RadioButtonGroup class="sapUiMediumMarginBottom" columns="5">
 												<buttons>
-													<RadioButton id="RB3-1" text="Realted Party"/>
-													<RadioButton id="RB3-2" text="Donation"/>
-													<RadioButton id="RB3-3" text="Domestic Education"/>
-													<RadioButton id="RB3-4" text="Abroad Education"/>
-													<RadioButton id="RB3-5" text="Others"/>
+													<RadioButton id="RB3-1" text="Realted Party" editable="false"/>
+													<RadioButton id="RB3-2" text="Donation" editable="false"/>
+													<RadioButton id="RB3-3" text="Domestic Education" editable="false"/>
+													<RadioButton id="RB3-4" text="Abroad Education" editable="false"/>
+													<RadioButton id="RB3-5" text="Others" editable="false"/>
 												</buttons>
 											</RadioButtonGroup>
 											<Label text="Realted Party:"/>
-											<Select width="100%">
+											<Select width="100%" enabled="false">
 												<items>
-													<core:Item text=""/>
+													<core:Item text="tur? Quis autem" editable="false"/>
 												</items>
 											</Select>
 											<Label text="B&amp;R Explanation:"/>
-											<TextArea class="inputTextArea" value=""/>
+											<TextArea class="inputTextArea" value="" editable="false"/>
 											<Label text="Type here"/>
 										</f:content>
 									</f:SimpleForm>
@@ -131,7 +142,7 @@
 										<f:content>
 											<core:Title/>
 											<Label text="Currency:"/>
-											<Select width="100%">
+											<Select width="100%" enabled="false">
 												<items>
 													<core:Item text="TRY"/>
 													<core:Item text="USD"/>
@@ -139,10 +150,10 @@
 												</items>
 											</Select>
 											<HBox>
-												<Input class="inputCurr" value="{Currency}"/>
+												<Input class="inputCurr" value="100" editable="false"/>
 											</HBox>
 											<Label text="Total Amount:"/>
-											<Input class="inputForm" value="0"/>
+											<Input class="inputForm" value="100" editable="false"/>
 											<HBox>
 												<Label class="labelExc" text="(Exc.VAT)"/>
 											</HBox>
@@ -170,7 +181,7 @@
 												</items>
 											</Table>
 											<Label text="Total Amount:"/>
-											<Input class="inputForm" value="0"/>
+											<Input class="inputForm" value="100" editable="false"/>
 											<HBox>
 												<Label class="labelPay" id="idTRY1" text="TRY"/>
 												<Label class="labelExc" text="(Exc.VAT)"/>
@@ -192,6 +203,21 @@
 										<FlexItemData growFactor="1"/>
 									</layoutData>
 								</Button>
+							</content>
+						</Panel>
+						<Panel class="panelBottom" id="panelFifthContainerBudget" width="auto">
+							<headerToolbar>
+								<Toolbar height="3rem">
+									<Title class="boldText" text="Opinion Request Person"/>
+								</Toolbar>
+							</headerToolbar>
+							<content>
+									<Select  width="30%">
+										<items>
+											<core:Item text="" editable="true"/>
+										</items>
+									</Select>
+									<Button icon="img/reject.png" class="btnReq"/>
 							</content>
 						</Panel>
 					</content>
@@ -235,10 +261,16 @@
 		</items>
 	</IconTabBar>
 	<OverflowToolbar>
-		<Button icon="sap-icon://paper-plane" text="Send" type="Accept">
+		<Button icon="sap-icon://accept" text="Approve" type="Accept">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
-		<Button icon="sap-icon://sys-cancel" text="Cancel" type="Reject">
+		<Button icon="sap-icon://undo" text="Send Back" type="Default">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://collaborate" text="Take Opinion" type="Emphasized">
+			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+		</Button>
+		<Button icon="sap-icon://sys-cancel" text="Reject" type="Reject">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
 	</OverflowToolbar>
