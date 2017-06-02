@@ -2,7 +2,7 @@
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:commons="sap.ui.commons" class="sapUiSizeCompact"
 	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m">
 	<OverflowToolbar>
-			<Button icon="sap-icon://accept" text="Approve" type="Accept">
+		<Button icon="sap-icon://accept" text="Approve" type="Accept">
 			<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
 		</Button>
 		<Button icon="sap-icon://undo" text="Send Back" type="Default">
@@ -164,7 +164,7 @@
 				<List headerText="A List" showSeparators="Inner"></List>
 			</IconTabFilter>
 			<IconTabFilter text="MESSAGES">
-				<Button icon="sap-icon://add" text="Add Message"/>
+				<Button icon="sap-icon://add" press="onAddMessageDialogPress" text="Add Message" id="idClickExpense"/>
 				<Table id="idExpenseMessage" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
 					<columns>
 						<Column width="12em">

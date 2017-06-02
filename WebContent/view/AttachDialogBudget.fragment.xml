@@ -5,7 +5,7 @@
 			<l:SimpleForm editable="true" id="simpleFormAttach">
 			    <l:content>
 			        <m:VBox>
-			            <Label id="attachFile" text="Attach File"/>
+			            <Label id="attachFileBudget" text="Attach File"/>
 			            <u:FileUploader id="fileupload" width="700px" sameFilenameAllowed="false" placeholder="select file" useMultipart="false" sendXHR="true">
 			            </u:FileUploader>
 			             <!--<Button icon="sap-icon://upload" id="btn" text="Upload" type="Emphasized"/>-->
