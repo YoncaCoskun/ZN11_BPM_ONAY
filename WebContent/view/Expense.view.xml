@@ -44,21 +44,21 @@
 										<f:content>
 											<core:Title/>
 											<Label text="Request Owner:"/>
-											<Input class="inputForm" value="{Request Owner}"/>
+											<Input class="inputForm" value="ADEM YETİM" editable="false"/>
 											<Label text="Department:"/>
-											<Input class="inputForm" value="{Department}"/>
+											<Input class="inputForm" value="SOUTHERN ANATOLIA" editable="false"/>
 											<Label text="Title:"/>
-											<Input class="inputForm" value="{Title}"/>
+											<Input class="inputForm" value="SPECIALIST" editable="false"/>
 											<core:Title/>
 											<Label text="Request Number:"/>
-											<Input class="inputForm" value="{Request Number}"/>
+											<Input class="inputForm" value="2017-BAF-4" editable="false"/>
 											<Label text="Request Date:"/>
-											<Input class="inputForm" value="{RequestDate}"/>
+											<Input class="inputForm" value="02.06.2017" editable="false"/>
 											<HBox>
-												<Input class="inputForm" value=""/>
+												<Input class="inputForm" value="" editable="false"/>
 											</HBox>
 											<Label text="Status:"/>
-											<Input class="inputForm" placeholder="Form Status"/>
+											<Input class="inputForm" placeholder="Form Status" editable="false"/>
 										</f:content>
 									</f:SimpleForm>
 								</VBox>
@@ -75,7 +75,7 @@
 									<f:SimpleForm editable="true" layout="ResponsiveGridLayout">
 										<f:content>
 											<Label text="Currency Type:"/>
-											<Select width="100%">
+											<Select width="100%" enabled="false">
 												<items>
 													<core:Item text="TRY"/>
 													<core:Item text="USD"/>
@@ -83,7 +83,7 @@
 												</items>
 											</Select>
 											<HBox>
-												<Input class="inputForm" value="{Request Owner}"/>
+												<Input class="inputForm" value="{Request Owner}" editable="false"/>
 											</HBox>
 											<Label text="Expense List:"/>
 											<Table id="mainViewTbl83" inset="false" items="{ path: '/ET_HEADERSet', sorter: { path: 'Name' } }">
@@ -116,7 +116,7 @@
 											</Button>
 											<HBox>
 												<Label text="Total Amount:" class="labelPay"/>
-												<Input class="inputForm" value=""/>
+												<Input class="inputForm" value="" editable="false"/>
 											</HBox>
 										</f:content>
 									</f:SimpleForm>
@@ -135,14 +135,14 @@
 										<f:content>
 											<VBox>
 												<Label class="textLabel" text="Expense is Related With:"/>
-												<RadioButtonGroup columns="2">
+												<RadioButtonGroup columns="2" editable="false">
 													<buttons>
 														<RadioButton id="RB-1" text="Travel"/>
 														<RadioButton id="RB-2" text="Other"/>
 													</buttons>
 												</RadioButtonGroup>
 												<Label class="textLabel" text="Expense was paid by:"/>
-												<RadioButtonGroup columns="2">
+												<RadioButtonGroup columns="2" editable="false">
 													<buttons>
 														<RadioButton id="RB0-1" text="Corporate Credit Card"/>
 														<RadioButton id="RB0-2" text="Private Credit Card or Cash etc."/>
