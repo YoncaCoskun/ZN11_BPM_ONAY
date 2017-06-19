@@ -52,54 +52,51 @@
 			<NavContainer id="navContainer">
 				<pages>
 					<Page id="idHomePage" showHeader="false">
-						<l:BlockLayout background="Light" id="BlockLayout">
-							<l:BlockLayoutRow>
-								<l:BlockLayoutCell class="sapUiNoContentPadding">
-									<!--<Image src="img/homeImage.png" width="100%"/>-->
-								</l:BlockLayoutCell>
-							</l:BlockLayoutRow>
-							<l:BlockLayoutRow class="shopAdministrationTitle" rowColorSet="ColorSet1">
-								<l:BlockLayoutCell class="sapUiResponsiveContentPadding sapUiTinyMarginBegin"></l:BlockLayoutCell>
-							</l:BlockLayoutRow>
-							<l:BlockLayoutRow rowColorSet="ColorSet2">
-								<l:BlockLayoutCell>
-									<l:VerticalLayout>
-										<core:Icon color="#346187" size="2.5rem" src="sap-icon://role"/>
-										<Title class="sapUiTinyMarginTopBottom" text="{i18n]administrationTitle}" titleStyle="H2"/>
-										<Text class="sapUiTinyMarginBottom" text="{i18n]administrationContent}"/>
-										<Link text="{i18n>accessLink}"/>
-										<Link text="{i18n>learnLink}"/>
-									</l:VerticalLayout>
-								</l:BlockLayoutCell>
-								<l:BlockLayoutCell>
-									<l:VerticalLayout>
-										<core:Icon color="#346187" size="2.5rem" src="sap-icon://add-product"/>
-										<Title class="sapUiTinyMarginTopBottom" text="{i18n]productTitle}" titleStyle="H2"/>
-										<Text class="sapUiTinyMarginBottom" text="{i18n]productContent}"/>
-										<Link text="{i18n>accessLink}"/>
-										<Link text="{i18n>learnLink}"/>
-									</l:VerticalLayout>
-								</l:BlockLayoutCell>
-								<l:BlockLayoutCell>
-									<l:VerticalLayout>
-										<core:Icon color="#346187" size="2.5rem" src="sap-icon://customer-financial-fact-sheet"/>
-										<Title class="sapUiTinyMarginTopBottom" text="{i18n]revenueTitle}" titleStyle="H2"/>
-										<Text class="sapUiTinyMarginBottom" text="{i18n]revenueContent}"/>
-										<Link text="{i18n>accessLink}"/>
-										<Link text="{i18n>learnLink}"/>
-									</l:VerticalLayout>
-								</l:BlockLayoutCell>
-								<l:BlockLayoutCell>
-									<l:VerticalLayout>
-										<core:Icon color="#346187" size="2.5rem" src="sap-icon://supplier"/>
-										<Title class="sapUiTinyMarginTopBottom" text="{i18n]supplierTitle}" titleStyle="H2"/>
-										<Text class="sapUiTinyMarginBottom" text="{i18n]supplierContent}"/>
-										<Link text="{i18n>accessLink}"/>
-										<Link text="{i18n>learnLink}"/>
-									</l:VerticalLayout>
-								</l:BlockLayoutCell>
-							</l:BlockLayoutRow>
-						</l:BlockLayout>
+						<GenericTile header="{StorageBin}" press="pressPayment" subheader="{MaterialText}" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+						headerImage="sap-icon://complete">
+						<tileContent>
+							<TileContent>
+								<content>
+									<VBox>
+										<HBox>
+											<Label text="Budget  Approval" class="budgetApproveLabel"></Label>
+											<NumericContent class="numericTile" indicator="Up" scale="%" value="{PercentageOfFullness}"/>
+										</HBox>
+									</VBox>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+						<GenericTile header="{StorageBin}" press="pressPayment" subheader="{MaterialText}" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+						headerImage="sap-icon://complete">
+						<tileContent>
+							<TileContent>
+								<content>
+									<VBox>
+										<HBox>
+											<Label text="Payment Approval" class="paymentApproveLabel"></Label>
+											<NumericContent class="numericTile" indicator="Up" scale="%" value="{PercentageOfFullness}"/>
+										</HBox>
+									</VBox>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+						<GenericTile header="{StorageBin}" press="pressExpense" subheader="{MaterialText}" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+						headerImage="sap-icon://complete">
+						<tileContent>
+							<TileContent>
+								<content>
+									<VBox>
+										<HBox>
+											<Label text="Expense Approval" class="expenseApproveLabel"></Label>
+											<NumericContent class="numericTile" indicator="Up" scale="%" value="{PercentageOfFullness}"/>
+										</HBox>
+									</VBox>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
 					</Page>
 					<Page id="idExpensePage" showHeader="false">
 						<ScrollContainer height="100%" horizontal="false" id="root1" vertical="true">

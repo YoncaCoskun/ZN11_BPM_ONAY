@@ -365,9 +365,7 @@ sap.ui.define([
 		btnBudgetClick: function()
 
 		{
-
 			var navCon = this.getView().byId("navContainer");
-
 			navCon.to(this.getView().byId("idBudgetPage"), "slide");
 
 		},
@@ -377,7 +375,6 @@ sap.ui.define([
 		{
 
 			var navCon = this.getView().byId("navContainer");
-
 			navCon.to(this.getView().byId("idExpensePage"), "slide");
 
 		},
@@ -385,12 +382,26 @@ sap.ui.define([
 		btnPaymentClick: function()
 
 		{
-
 			var navCon = this.getView().byId("navContainer");
-
 			navCon.to(this.getView().byId("idPaymentPage"), "slide");
 
+		},
+		pressBudget:function(){
+			
+			var navCon = this.getView().byId("navContainer");
+			navCon.to(this.getView().byId("idBudgetPage"), "slide");
+		},
+		pressPayment:function(){
+			
+			var navCon = this.getView().byId("navContainer");
+			navCon.to(this.getView().byId("idPaymentPage"), "slide");
+		},
+		pressExpense:function(){
+			var navCon = this.getView().byId("navContainer");
+			navCon.to(this.getView().byId("idExpensePage"), "slide");
+			
 		}
+		
 
 	});
 
