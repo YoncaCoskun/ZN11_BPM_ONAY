@@ -7,7 +7,7 @@
     "mockRequestsFilePath": ""
   },
   "deploy": {
-    "destination": "IFP",
+    "destination": "FIO",
     "name": "ZN11_BPM_ONAY"
   },
   "generation": [

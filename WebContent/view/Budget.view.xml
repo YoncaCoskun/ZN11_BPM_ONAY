@@ -29,11 +29,16 @@
 						</Toolbar>
 					</headerToolbar>
 					<content>
+						<Panel class="panelBottom" id="panelFirs" width="auto">
+							<content>
+								<ImageContent class="imageLogo" src="img/3d-logo.jpg"></ImageContent>
+							</content>
+						</Panel>
 						<Panel class="panelBottom" id="panelFirstContainerBudget" width="auto">
 							<headerToolbar>
 								<Toolbar height="3rem">
 									<Title class="boldText" text="Form Details"/>
-									<ImageContent class="imageLogo" src="img/n11_logo.png"></ImageContent>
+									<!--<ImageContent class="imageLogo" src="img/n11_logo.png"></ImageContent>-->
 								</Toolbar>
 							</headerToolbar>
 							<content>
@@ -113,7 +118,8 @@
 													<RadioButton id="RB3-2" text="Donation" editable="false"/>
 													<RadioButton id="RB3-3" text="Domestic Education" editable="false"/>
 													<RadioButton id="RB3-4" text="Abroad Education" editable="false"/>
-													<RadioButton id="RB3-5" text="Others" editable="false"/>
+													<RadioButton id="RB3-5" text="Business Trip" editable="false"/>
+													<RadioButton id="RB3-6" text="Others" editable="false"/>
 												</buttons>
 											</RadioButtonGroup>
 											<Label text="Realted Party:"/>
@@ -212,19 +218,19 @@
 								</Toolbar>
 							</headerToolbar>
 							<content>
-									<Select  width="30%">
-										<items>
-											<core:Item text="" editable="true"/>
-										</items>
-									</Select>
-									<Button icon="img/reject.png" class="btnReq"/>
+								<Select width="30%">
+									<items>
+										<core:Item text="" editable="true"/>
+									</items>
+								</Select>
+								<Button icon="img/reject.png" class="btnReq"/>
 							</content>
 						</Panel>
 					</content>
 				</Panel>
-				<Button icon="sap-icon://print" text="Print the document"/>
+			<!--	<Button icon="sap-icon://print" text="Print the document"/>
 				<Button icon="sap-icon://notes" text="Notes"/>
-				<Button icon="sap-icon://save" text="Save Changes"/>
+				<Button icon="sap-icon://save" text="Save Changes"/>-->
 			</IconTabFilter>
 			<IconTabFilter text="FLOW">
 				<List headerText="A List" showSeparators="Inner"></List>
